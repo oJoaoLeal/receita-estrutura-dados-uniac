@@ -17,6 +17,7 @@ def gravar_receita():
         arquivo.write("\nModo de Preparo:\n")
         arquivo.write(modo_preparo + "\n\n")
     print("Receita gravada com sucesso!")
+    menu_opt()
 
 
 def listar_receitas():
@@ -51,13 +52,8 @@ def limpar_arquivo():
 
 
 def menu_opt():
-    print("1 - Criar Receita")
-    print("2 - Consultar Receita")
-    print("3 - Listar Receitas")
-    print("4 - Limpar Arquivo")
-    print("5 - Sair")
-    print()
-    usr_opt = input("Digite uma opção válida: ")
+    print("1 - Criar Receita\n2 - Consultar Receita\n3 - Listar Receitas\n4 - Limpar Arquivo\n5 - Sair")
+    usr_opt = input("\nDigite uma opção válida: ")
 
     if usr_opt == '1':
         gravar_receita()
