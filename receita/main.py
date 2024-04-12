@@ -26,6 +26,7 @@ def listar_receitas():
             print(arquivo.read())
     except FileNotFoundError:
         print("Nenhuma receita encontrada.")
+    menu_opt()
 
 
 def consultar_receita():
@@ -41,6 +42,7 @@ def consultar_receita():
                 print("Receita não encontrada.")
     except FileNotFoundError:
         print("Nenhuma receita encontrada.")
+    menu_opt()
 
 
 def limpar_arquivo():
@@ -49,6 +51,7 @@ def limpar_arquivo():
         print("Arquivo de receitas limpo com sucesso!")
     except FileNotFoundError:
         print("Nenhuma receita encontrada.")
+    menu_opt()
 
 
 def menu_opt():
